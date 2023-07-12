@@ -260,3 +260,10 @@ int main(){
     base->print();
 }
 ```
+# Difference between compile time polymorphism vs run time polymorphism
+| compile time polymorphism  | run time polymorphism |
+| ----------------------------------------------------------- | ------------- |
+|1.Acheived by function overloading and operator overloading  | Acheived by Function overriding.  |
+|2.Implemented at compile time   | Implemented at run-time  |
+|3.Functions name should be same but params canbe different   | Function names and params should be same  |
+|4.Fast execution time   | slow execution time  |  |4.More memory effective   | Less memory effective  |
