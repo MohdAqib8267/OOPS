@@ -152,5 +152,10 @@ Output: Parent Class
 > A real-life example of polymorphism is a person who at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person exhibits different behavior in different situations. This is called polymorphism.
 > ##### Types of Polymorphism IMP
 >  1. Compile Time Polymorphism (Static)
->  2.  2. Runtime Polymorphism (Dynamic)
+>  2. Runtime Polymorphism (Dynamic)
 >  ![Polymorphism-in-CPP](https://github.com/MohdAqib8267/OOPS/assets/106628860/8bab0cd1-32e8-4f5e-ac1a-b3347f11f928)
+>  ##### 1. Compile-Time Polymorphism:-
+> The polymorphism which is implemented at the compile time is known as compile-time polymorphism.
+> Compile-Time Polymorphism is achieved by function overloading or operator overloading.
+> #### A. Function Overloading
+>When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded, hence this is known as Function Overloading. Functions can be overloaded by changing the number of arguments or/and changing the type of arguments.
