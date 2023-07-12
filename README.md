@@ -259,3 +259,4 @@ int main(){
     base->display(); // base ke print me virtual lgaya h isliye wo override hp jayega child wale se
     base->print();
 }
+```
