@@ -147,3 +147,10 @@ Output: Parent Class
         child2 class
         Grand child class
 ```
+### Polymorphism
+> Polymorphism is the ability to present the same interface in different forms.
+> A real-life example of polymorphism is a person who at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person exhibits different behavior in different situations. This is called polymorphism.
+> ##### Types of Polymorphism IMP
+>  1. Compile Time Polymorphism (Static)
+>  2.  2. Runtime Polymorphism (Dynamic)
+>  ![Polymorphism-in-CPP](https://github.com/MohdAqib8267/OOPS/assets/106628860/8bab0cd1-32e8-4f5e-ac1a-b3347f11f928)
