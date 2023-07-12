@@ -267,3 +267,32 @@ int main(){
 |2.Implemented at compile time   | Implemented at run-time  |
 |3.Functions name should be same but params canbe different   | Function names and params should be same  |
 |4.Fast execution time   | slow execution time  |  |4.More memory effective   | Less memory effective  |
+
+# Friend Function
+> A friend function can be a special access to private and protected members of a class in C++. They are the non-member functions that can access and manipulate the private and protected members of the class for they are declared as friends.
+```
+class A{
+    private:
+    int x;
+    protected:
+    int z;
+    public:
+    A(int p,int q){
+        x=p;
+        z=q;
+    }
+    friend void print(A &obj);
+
+};
+
+void print(A &obj){
+    cout<<obj.x<<endl;
+    cout<<obj.z<<endl;
+}
+int main(){
+ A obj(5,4);
+//  cout<<obj.x<<endl;  //give error but using frient function work done.
+
+print(obj);
+}
+```
