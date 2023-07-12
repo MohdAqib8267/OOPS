@@ -110,3 +110,40 @@ class Child2: public Parent1{
               class A
 So, class A have Ancestor F properties will come two times
 ```
+```
+class Parent{
+    public:
+    Parent(){
+        cout<<"Parent Class"<<endl;
+    }
+};
+
+class Child1: public Parent{
+    public:
+    Child1(){
+        cout<<"child1 class"<<endl;
+    }
+};
+class Child2: public Parent{
+    public:
+    Child2(){
+        cout<<"child2 class"<<endl;
+    }
+};
+
+
+class GrandChild: public Child1, public Child2{
+    public:
+    GrandChild(){
+        cout<<"Grand child class"<<endl;
+    }
+};
+int main(){
+    GrandChild c;
+}
+Output: Parent Class
+        child1 class
+        Parent Class
+        child2 class
+        Grand child class
+```
