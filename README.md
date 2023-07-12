@@ -1,5 +1,6 @@
 # OOPS
 <hr/>
+
 # Inheritance
 Inheritance is a process in which one class/object acquires all the properties and behaviors ofits parent class/object automatically. In such a way, you can reuse, extend or modify the attributes and behaviors which are defined in other classes. 
 In C++, the class which inherits the members of another class is called derived class and the class whose members are inherited is called base class. The derived class is the specialized class for the base class.
@@ -181,7 +182,35 @@ int main(){
     s.add(2,3,4);
     s.add(float(1.2),float(2.7));
 }
-Output:-5
+Output: 5
         9
         3.9
+```
+> #### B. Operator Overloading
+> C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
+> For example, a single operator ‘+’, when placed between integer operands, adds them and when placed between string operands, concatenates them.
+```
+class Complex{
+    public:
+    int real;
+    int img;
+    Complex(int x,int y){
+        real=x;
+        img=y;
+    }
+    Complex operator+ (Complex &c){
+        Complex ans(0,0);
+        ans.real=real+c.real;
+        ans.img=img+c.img;
+        return ans;
+    }
+};
+int main(){
+    Complex c1(2,3);
+    Complex c2(3,4);
+
+    Complex c3=c1+c2;
+    cout<<c3.real<<" i"<<c3.img<<endl;
+
+}
 ```
