@@ -1,5 +1,5 @@
 # OOPS
-<hr/>
+<hr/> 
 
 # Inheritance
 Inheritance is a process in which one class/object acquires all the properties and behaviors ofits parent class/object automatically. In such a way, you can reuse, extend or modify the attributes and behaviors which are defined in other classes. 
