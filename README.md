@@ -214,3 +214,48 @@ int main(){
 
 }
 ```
+> ### 2. Runtime Polymorphism
+> Resolved at runtime.
+> Runtime polymorphism is also known as dynamic polymorphism.
+> This is acheived by Function overriding
+> #### A. Function Overriding
+> Function overriding means when the child class contains the method which is already present in the parent class. Hence, the child class overrides the method of the parent class. In case offunction overriding, parent and child classes both contain the same function with a diff erent definition.
+```
+class GFG_Base {
+ 
+public:
+    // virtual function
+    virtual void display()
+    {
+        cout << "Called virtual Base Class function"
+             << "\n\n";
+    }
+ 
+    void print()
+    {
+        cout << "Called GFG_Base print function"
+             << "\n\n";
+    }
+};
+class GFG_Child : public GFG_Base {
+ 
+public:
+    void display()
+    {
+        cout << "Called GFG_Child Display Function"
+             << "\n\n";
+    }
+ 
+    void print()
+    {
+        cout << "Called GFG_Child print Function"
+             << "\n\n";
+    }
+};
+int main(){
+     GFG_Base* base;
+    GFG_Child child;
+    base = &child;  // base ko child assign kiya
+    base->display(); // base ke print me virtual lgaya h isliye wo override hp jayega child wale se
+    base->print();
+}
