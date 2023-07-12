@@ -154,8 +154,34 @@ Output: Parent Class
 >  1. Compile Time Polymorphism (Static)
 >  2. Runtime Polymorphism (Dynamic)
 >  ![Polymorphism-in-CPP](https://github.com/MohdAqib8267/OOPS/assets/106628860/8bab0cd1-32e8-4f5e-ac1a-b3347f11f928)
->  ##### 1. Compile-Time Polymorphism:-
+>  #### 1. Compile-Time Polymorphism:-
 > The polymorphism which is implemented at the compile time is known as compile-time polymorphism.
 > Compile-Time Polymorphism is achieved by function overloading or operator overloading.
-> #### A. Function Overloading
+> ##### A. Function Overloading
 >When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded, hence this is known as Function Overloading. Functions can be overloaded by changing the number of arguments or/and changing the type of arguments.
+```
+class Sum{
+    public:
+    void add(int x,int y){
+        int sum=x+y;
+        cout<<sum<<endl;
+    }
+    void add(int x,int y,int z){
+        int sum=x+y+z;
+        cout<<sum<<endl;
+    }
+    void add(float x,float y){
+        float sum=x+y;
+        cout<<sum<<endl;
+    }
+};
+int main(){
+     Sum s;
+    s.add(2,3);
+    s.add(2,3,4);
+    s.add(float(1.2),float(2.7));
+}
+Output:-5
+        9
+        3.9
+```
