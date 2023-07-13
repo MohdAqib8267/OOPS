@@ -76,7 +76,7 @@ class Parent{
     private:
     int z;
 };
-inherit kr rhey
+  //inherit kr rhey
 class child1: public Parent{
     // x will remain public
     
@@ -92,6 +92,7 @@ class child3: protected Parent{
     // y will remain protected
     // z will be inaccessible
 };
+
 ```
 <h3>Types of Inheritance :</h3>
 
