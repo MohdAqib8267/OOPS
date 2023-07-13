@@ -1,5 +1,43 @@
 # OOPS
 <hr/> 
+# Constructer
+> Constructor is a special method which is invoked automatically at the time of object creation. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as class or structure.
+### There can be Three types of constructors in C++
+>1. Default constructor : Aconstructor which has no argument is known as default constructor. It is invoked at the time of creating an object. 
+2. Parameterized constructor : Constructor which has parameters is called a parameterized constructor. It is used to provide diff erent values to distinct objects.
+3. Copy Constructor : A Copy constructor is an overloaded constructor used to declare and initialize an object from another object. 
+It is of two types - default copy constructor and user defined copy constructor.
+```
+
+class Rectangle{
+    public:
+    int l;
+    int b;
+
+    //Default constructer-no arguments passed
+    Rectangle(){
+        l=0;
+        b=0;
+    }
+    //parameterized constructer
+    Rectangle(int x,int y){
+        l=x;
+        b=y;
+    }
+    
+    //copy constructer- initialize an object by existing an another object
+    Rectangle(Rectangle &r){
+        l=r.l;
+        b=r.b;
+    }
+
+    //Destructer
+    ~Rectangle(){
+        cout<<"Destructer is called"<<endl;
+    }
+
+};
+```
 
 # Inheritance
 Inheritance is a process in which one class/object acquires all the properties and behaviors ofits parent class/object automatically. In such a way, you can reuse, extend or modify the attributes and behaviors which are defined in other classes. 
