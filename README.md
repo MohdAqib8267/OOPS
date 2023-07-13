@@ -9,6 +9,9 @@
 >2. Parameterized constructor : Constructor which has parameters is called a parameterized constructor. It is used to provide diff erent values to distinct objects.
 >3. Copy Constructor : A Copy constructor is an overloaded constructor used to declare and initialize an object from another object. 
 It is of two types - default copy constructor and user defined copy constructor.
+
+# Destructer
+>● Destructor : Adestructor works opposite to constructor; it destructs the objects of classes. It can be defined only once in a class. Like constructors, it is invoked automatically. Adestructor is defined like a constructor. It must have the same name as class, prefixed with a tilde sign (~).
 ```
 
 class Rectangle{
@@ -346,4 +349,21 @@ int main(){
 
 print(obj);
 }
+```
+
+# ● ‘this’ Pointer :
+>this is a keyword that refers to the current instance of the class. There can be 3 main uses of‘this’ keyword:
+>1. It can be used to pass the current object as a parameter to another method
+>2. It can be used to refer to the current class instance variable.
+>3. It can be used to declare indexers.
+#### C++ Syntax : 
+```
+struct node{
+    int data;
+    node *next;
+     node(int x){
+    this->data = x;
+    this->next = NULL;
+    }
+ }
 ```
