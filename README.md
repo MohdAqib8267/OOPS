@@ -64,6 +64,35 @@ int main(){
 Inheritance is a process in which one class/object acquires all the properties and behaviors ofits parent class/object automatically. In such a way, you can reuse, extend or modify the attributes and behaviors which are defined in other classes. 
 In C++, the class which inherits the members of another class is called derived class and the class whose members are inherited is called base class. The derived class is the specialized class for the base class.
 <h3>visibility-modes = {private, protected, public} </h3>
+```
+class Parent{
+
+    public:
+    int x;
+
+    protected:
+    int y;
+
+    private:
+    int z;
+};
+inherit kr rhey
+class child1: public Parent{
+    // x will remain public
+    
+    // z will not be accessible
+};
+class child2: public Parent{
+    // x will be private
+    // y will be private
+    // z will be inaccessible
+};
+class child3: protected Parent{
+    // x will remain protected
+    // y will remain protected
+    // z will be inaccessible
+};
+```
 <h3>Types of Inheritance :</h3>
 
 > 1. Single inheritance : When one class inherits another class, it is known as single level inheritance
