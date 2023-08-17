@@ -104,10 +104,10 @@ class Parent{
   //inherit kr rhey
 class child1: public Parent{
     // x will remain public
-    
+    //y will remian protected
     // z will not be accessible
 };
-class child2: public Parent{
+class child2: private Parent{
     // x will be private
     // y will be private
     // z will be inaccessible
