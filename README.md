@@ -1,5 +1,22 @@
 # OOPS
 <hr/> 
+>
+Object-Oriented Programming is a methodology or paradigm to design a
+program using classes and objects. It simplifies the software development
+and maintenance by providing some concepts defined below :
+#### 1.Inheritance:-
+Inheritance is a process in which one object acquires all the properties and
+behaviors ofits parent object automatically.
+#### 2.Encapsulation:-
+Encapsulation is the process of combining data and functions into a single
+unit called class. In Encapsulation, the data is not accessed directly; it is
+accessed through the functions present inside the class.
+#### 3. Abstraction:-
+>Abstraction is defined as delivering only essential information to the outer world while masking background details.
+#### 4. Polymorphism:-
+> Polymorphism is the ability to present the same interface in different forms.
+> A real-life example of polymorphism is a person who at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person exhibits different behavior in different situations. This is called polymorphism.
+>
 
 # Access specifiers(IMP)
 > #### Access Specifiers IMP :  The access specifiers are used to define how functions and variables can be accessed outside the class. There are three types of access specifiers:
