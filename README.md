@@ -30,7 +30,11 @@ object is instantiated.
 >1. Private: Functions and variables declared as private can be accessed only within the same class, and they cannot be accessed outside the class they are declared.
 >2. Public: Functions and variables declared under public can be accessed from anywhere.
 >3. Protected: Functions and variables declared as protected cannot be accessed outside the class except a child class. This specifier is generally used in inheritance.
-
+# Object:-
+>Object is a run-time entity. It is an instance of the class. An object can
+represent a person, place or any other item. An object can operate on
+both data members and member functions.
+>
 # Constructer
 > Constructor is a special method which is invoked automatically at the time of object creation. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as class or structure.
 ### There can be Three types of constructors in C++
