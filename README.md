@@ -16,8 +16,15 @@ accessed through the functions present inside the class.
 > Polymorphism is the ability to present the same interface in different forms.
 > A real-life example of polymorphism is a person who at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person exhibits different behavior in different situations. This is called polymorphism.
 >
-<hr/>
-
+# Class
+>
+Class is a user-defined data type which defines its properties and its
+functions. Class is the only logical representation of the data. For
+example, Human being is a class. The body parts of a human being are its
+properties, and the actions performed by the body parts are known as
+functions. The class does not occupy any memory space till the time an
+object is instantiated.
+>
 # Access specifiers(IMP)
 > #### Access Specifiers IMP :  The access specifiers are used to define how functions and variables can be accessed outside the class. There are three types of access specifiers:
 >1. Private: Functions and variables declared as private can be accessed only within the same class, and they cannot be accessed outside the class they are declared.
