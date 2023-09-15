@@ -451,6 +451,63 @@ int main(){
 print(obj);
 }
 ```
+# Static Binding and Dynamic Binding
+
+The process of matching a specific function call to its respective function definition is known as binding.
+
+There are two types of binding:
+* Static Binding (also known as Early Binding).
+* Dynamic Binding (also known as Late Binding).
+### Static Binding 
+Binding at compile time is known as static binding. Here it directly associates an address to the function call.This is achieved by using Function overloading or operator overloading.
+For function overloading it is an example of early binding.
+
+```
+#include<iostream>
+using namespace std;
+class Base {
+   public:
+   void display() {
+      cout<<" In Base class" <<endl;
+   }
+};
+class Derived: public Base {
+   public:
+   void display() {
+      cout<<"In Derived class" << endl;
+   }
+};
+int main(void) {
+   Base *base_pointer = new Derived;
+   base_pointer->display();
+   return 0;
+}
+****OUTPUT: In Base class
+```
+### Dynamic Binding
+Binding at run time is known as Dynamic Binding. In this type of binding the compiler adds code that identifies the object type at runtime then matches the call with the right function definition. This is achieved by using virtual function.
+```
+#include<iostream>
+using namespace std;
+class Base {
+   public:
+   virtual void display() {
+      cout<<"In Base class" << endl;
+   }
+};
+class Derived: public Base {
+   public:
+   void display() {
+      cout<<"In Derived class" <<endl;
+   }
+};
+int main() {
+   Base *base_pointer = new Derived;
+   base_pointer->display();
+   return 0;
+}
+**** OUTPUT: In Derived class
+```
 
 # ● ‘this’ Pointer :
 >this is a keyword that refers to the current instance of the class. There can be 3 main uses of‘this’ keyword:
