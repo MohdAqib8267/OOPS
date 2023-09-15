@@ -16,6 +16,11 @@ accessed through the functions present inside the class.
 > Polymorphism is the ability to present the same interface in different forms.
 > A real-life example of polymorphism is a person who at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person exhibits different behavior in different situations. This is called polymorphism.
 >
+# Advantage of OOPs over Procedure-oriented programming language
+1.OOPs makes development and maintenance easier where as in Procedure-oriented programming language it is not easy to manage if code grows as project size grows.
+2.OOPs provide data hiding whereas in Procedure-oriented programming language a global data can be accessed from anywhere.
+3.OOPs provide ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
+
 # Class
 >
 Class is a user-defined data type which defines its properties and its
