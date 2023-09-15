@@ -22,7 +22,13 @@ accessed through the functions present inside the class.
 2.OOPs provide data hiding whereas in Procedure-oriented programming language a global data can be accessed from anywhere.
 
 3.OOPs provide ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
+# Why is C++ a partial oop?
+>The C++ programming language is categorized as a partial object-oriented programming language even though it supports OOP concepts, including classes, objects, inheritance, encapsulation, abstraction, and polymorphism.
 
+1) The main function must always be outside the class in C++ and is required. This means that we may do without classes and objects and have a single main function in the application.so Pure OOP has been violated.
+
+2) Global variables are a feature of the C++ programming language that can be accessed by any other object within the program and are defined outside of it. Encapsulation is broken here. Even though C++ encourages encapsulation for classes and objects, it ignores it for global variables.
+>
 # Class
 >
 Class is a user-defined data type which defines its properties and its
