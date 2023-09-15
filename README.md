@@ -18,7 +18,9 @@ accessed through the functions present inside the class.
 >
 # Advantage of OOPs over Procedure-oriented programming language
 1.OOPs makes development and maintenance easier where as in Procedure-oriented programming language it is not easy to manage if code grows as project size grows.
+
 2.OOPs provide data hiding whereas in Procedure-oriented programming language a global data can be accessed from anywhere.
+
 3.OOPs provide ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
 
 # Class
