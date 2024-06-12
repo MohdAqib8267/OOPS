@@ -459,6 +459,62 @@ int main(){
 |3.Functions name should be same but params canbe different   | Function names and params should be same  |
 |4.Fast execution time   | slow execution time  |  |4.More memory effective   | Less memory effective  |
 
+> Sometimes implementation of all functions cannot be provided in a base class because we don’t know the implementation. Such a class is called an abstract class.For example, let Shape be a base class. We cannot provide the implementation of function draw() in Shape, but we know every derived class must have an implementation of draw().
+
+or
+(A class that contains a pure virtual function is known as an abstract class)
+```
+// C++ program to calculate the area of a square and a circle
+
+#include <iostream>
+using namespace std;
+
+// Abstract class
+class Shape {
+   protected:
+    float dimension;
+
+   public:
+    void getDimension() {
+        cin >> dimension;
+    }
+
+    // pure virtual Function
+    virtual float calculateArea() = 0;
+};
+
+// Derived class
+class Square : public Shape {
+   public:
+    float calculateArea() {
+        return dimension * dimension;
+    }
+};
+
+// Derived class
+class Circle : public Shape {
+   public:
+    float calculateArea() {
+        return 3.14 * dimension * dimension;
+    }
+};
+
+int main() {
+    Square square;
+    Circle circle;
+
+    cout << "Enter the length of the square: ";
+    square.getDimension();
+    cout << "Area of square: " << square.calculateArea() << endl;
+
+    cout << "\nEnter radius of the circle: ";
+    circle.getDimension();
+    cout << "Area of circle: " << circle.calculateArea() << endl;
+
+    return 0;
+}
+```
+
 # Friend Function
 > A friend function can be a special access to private and protected members of a class in C++. They are the non-member functions that can access and manipulate the private and protected members of the class for they are declared as friends.
 ```
