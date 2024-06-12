@@ -121,8 +121,44 @@ int main(){
 }
 ```
 # Abstraction
->Abstraction is defined as delivering only essential information to the outer world while masking background details, i.e. representing the required information in a program without showing the specifics. Abstraction is a design and programming method that separates the interface from the implementation.
+>Data abstraction is one of the most essential and important features of object-oriented programming in C++. Abstraction means displaying only essential information and hiding the details. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation. 
 
+Consider a real-life example of a man driving a car. 
+
+```
+// C++ Program to Demonstrate the
+// working of Abstraction
+#include <iostream>
+using namespace std;
+
+class implementAbstraction {
+private:
+	int a, b;
+
+public:
+	// method to set values of
+	// private members
+	void set(int x, int y)
+	{
+		a = x;
+		b = y;
+	}
+
+	void display()
+	{
+		cout << "a = " << a << endl;
+		cout << "b = " << b << endl;
+	}
+};
+
+int main()
+{
+	implementAbstraction obj;
+	obj.set(10, 20);
+	obj.display();
+	return 0;
+}
+```
 
 # Inheritance
 Inheritance is a process in which one class/object acquires all the properties and behaviors ofits parent class/object automatically. In such a way, you can reuse, extend or modify the attributes and behaviors which are defined in other classes. 
