@@ -100,6 +100,9 @@ int main(){
     cout<<r3.l<<" "<<r3.b<<endl;
 }
 ```
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/6e08345f-747d-4e1b-aabd-9908629cc946">
+
+
 # Encapsulation
 >Encapsulation is the process of combining data and functions into a single unit called class. In Encapsulation, the data is not accessed directly; it is accessed through the functions present inside the class. In simpler words, attributes of the class are kept private and public getter and setter methods are provided to manipulate these attributes. Thus, encapsulation makes the concept of data hiding possible.(Data hiding: a language feature to restrict access to members of an object, reducing the negative effect due to dependencies. e.g. "protected", "private" feature in C++).
 
@@ -543,6 +546,20 @@ int main(){
 print(obj);
 }
 ```
+# Inline Function
+C++ provides inline functions to reduce the function call overhead. An inline function is a function that is expanded in line when it is called. When the inline function is called whole code of the inline function gets inserted or substituted at the point of the inline function call.
+
+Remember, inlining is only a request to the compiler, not a command. The compiler can ignore the request for inlining. 
+```
+inline return-type function-name(parameters)
+{
+    // function code
+}
+```
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/54cd1c6e-3499-4c5b-8a3a-56ca22c42508">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/6e45f10f-1d47-45cb-bb7e-eaa0514c02f9">
+
+
 # Static Binding and Dynamic Binding
 
 The process of matching a specific function call to its respective function definition is known as binding.
